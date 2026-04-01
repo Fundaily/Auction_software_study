@@ -332,7 +332,3 @@ go test ./...
 - `AUCTION_ADDR`: 服务端口
 - `AUCTION_MYSQL_DSN`: 数据库连接字符串
 - `AUCTION_JWT_SECRET`: JWT 密钥
-
-## 技术支持
-
-如有问题或建议，请联系开发团队。
