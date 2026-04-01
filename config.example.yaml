@@ -1,0 +1,21 @@
+# Copy to config.yaml and adjust. Do not commit config.yaml if it contains secrets.
+
+addr: ":8080"
+
+# Example (replace user/password/db as needed):
+mysql_dsn: "root:your_password@tcp(127.0.0.1:3306)/test?charset=utf8mb4&parseTime=True&loc=Local"
+
+jwt_secret: "secret_key"
+
+upload_dir: "./uploads"
+static_url: "/static/uploads"
+
+admin_user: "admin"
+admin_pass: "admin123"
+
+# Bid anti-spam: token bucket burst and minimum spacing between bids (same user, same auction)
+bid_rate_burst: 5
+bid_rate_every_ms: 800
+
+# Optional: require header X-Webhook-Secret on POST /api/webhooks/payment
+payment_webhook_secret: ""
